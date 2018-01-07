@@ -1,10 +1,24 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
+
+
+
+group :test do
+	gem 'selenium-webdriver', '~> 2.42.0'
+	gem 'capybara', '~> 2.3.0'
+	gem 'factory_girl_rails'
+	gem 'faker'
+	gem 'launchy'
+end
+
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'bootstrap-sass'
+gem 'sprockets', '3.7.1'
+gem 'bcrypt-ruby', '3.1.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -20,8 +34,39 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem 'shoulda'
+gem 'date_validator'
+gem 'foreigner'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'searchkick'
+gem 'money'
+gem 'money-rails'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'geocoder'
+gem 'geo_ip'
+gem 'stripe'
+gem 'wkhtmltopdf-binary'
+gem 'wicked_pdf'
+gem 'premailer-rails'
+gem 'nokogiri'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'aws-sdk-v1'
+gem 'carrierwave'
+gem 'fog'
+gem 'figaro'
+gem 'mini_magick'
+gem 'responders'
+gem 'devise'
+gem 'elastic-beanstalk'
+gem 'font-awesome-rails'
+gem 'mail_form'
+gem 'simple_form'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+group :doc do 
+	gem 'sdoc', require: false
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
