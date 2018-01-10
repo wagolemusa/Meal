@@ -38,7 +38,7 @@ class DeviseCreateOrgPeople < ActiveRecord::Migration
 
     add_index :org_people, :email,                unique: true
     add_index :org_people, :reset_password_token, unique: true
-     add_index :org_people, :confirmation_token,   unique: true
+    add_index :org_people, :confirmation_token,   unique: true
     # add_index :org_people, :unlock_token,         unique: true
   end
 end
